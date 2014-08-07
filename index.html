@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jqFloat.js Demonstration</title>
+<!-- <link rel="shortcut icon" href="http://www.inwebson.com/wp-content/themes/inwebson2/favicon.ico" /> -->
+<link rel="stylesheet" href="assets/css/foundation.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="assets/js/jqfloat.min.js"></script>
+<script>
+$(document).ready(function() {
+
+	//vendor script
+	$('header')
+	.css({ 'top':-70 })
+	.delay(500)
+	.animate({'top': 0}, 800);
+
+	$('footer')
+	.css({ 'bottom':-40 })
+	.delay(500)
+	.animate({'bottom': 0}, 800);
+
+	//jqfloat.js script
+	// $('.astro').each(function() {
+	// 	$(this).jqFloat({
+	// 		width:Math.floor(Math.random()*10)*10,
+	// 		height:10,
+	// 		speed:Math.floor(Math.random()*10)*100 + 500
+	// 	});
+	// });
+	// $('#sun').jqFloat({
+	// 	width:10,
+	// 	height:50,
+	// 	speed:1800
+	// });
+	// $('.butterfly').jqFloat({
+	// 	width:400,
+	// 	height:100,
+	// 	speed:1500
+	// });
+	// $('#snail, #message').jqFloat('stop',{
+	// 	width:5,
+	// 	height:0,
+	// 	speed:30
+	// });
+	// $('#snail, #message').hover(function() {
+	// 	$(this).jqFloat('play');
+	// }, function() {
+	// 	$(this).jqFloat('stop');
+	// });
+	//
+	// var clicked = false;
+	// //define balloon attribute
+	// $('#balloon').jqFloat('stop',{
+	// 	width:5,
+	// 	height:30,
+	// 	speed:1500,
+	// 	minHeight:300
+	// });
+	// $('#balloon').on('click', function() {
+	// 	clicked = !clicked;
+	// 	if(clicked)
+	// 		$(this).jqFloat('play');
+	// 	else
+	// 		$(this).jqFloat('stop');
+	// });
+	// $('#social').jqFloat({
+	// 	width: 10,
+	// 	height: 10,
+	// 	speed: 1500
+	// });
+
+	$('.astro').each(function(){
+		// $(this).css('top', Math.random());
+		// $(this).css('left', Math.random());
+		// $(this).css('z-index', Math.random()*10);
+		$(this).css({
+			'top': Math.ceil(80*Math.random())+'%',
+			'left': Math.ceil(80*Math.random())+'%',
+			'z-index': Math.ceil(Math.random()*10)
+		});
+		$(this).jqFloat({
+			// width: 1500,
+			// height: 400,
+			// speed: Math.random()*500 + 1000
+			width:Math.floor(Math.random()*10)*10,
+			height:80,
+			speed:Math.floor(Math.random()*10)*100 + 500
+		});
+	});
+});
+</script>
+
+<style>
+.astro{
+	width:100px;
+	height:85px;
+	/*background:url(sprite.png) no-repeat 0 0;*/
+	position:absolute;
+	z-index:10;
+}
+
+/*#astro1{
+	top:17%;
+	left:22%;
+	z-index:3;
+}
+#astro2{
+	top:10%;
+	left:50%;
+}
+#astro3{
+	top:20%;
+	right:17%;
+}
+#astro4{
+	top:13%;
+	right:12%;
+	z-index:5;
+}*/
+
+</style>
+
+</head>
+<body>
+
+
+<header>
+	<h1>To the moon!!! ┗(°0°)┛</h1>
+</header>
+
+<!-- Content -->
+<img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro1"  height="150px" width="180px"/>
+<img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro2" height="150px" width="180px"/>
+<img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro3" height="150px" width="180px"/>
+<img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro4" height="150px" width="180px"/>
+<img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro5" height="150px" width="180px"/>
+
+
+<footer>
+	<span>&copy; 2014 Le Interns</span>
+</footer>
+
+</body>
+</html>
