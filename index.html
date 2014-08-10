@@ -23,6 +23,20 @@ $(document).ready(function() {
 	.delay(500)
 	.animate({'bottom': 0}, 800);
 
+	// var dir = window.location.href+"/../astro-pics/";
+	// var fileextension = ".png";
+	// $.ajax({
+	//     //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+	//     url: dir,
+	//     success: function (data) {
+	//         //Lsit all png file names in the page
+	//         $(data).find("a:contains(" + fileextension + ")").each(function () {
+	//             var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+	//             $("#myList").append($("<img src=" + dir + filename + "/>"));
+	//         });
+	//     }
+	// });
+
 	//jqfloat.js script
 	// $('.astro').each(function() {
 	// 	$(this).jqFloat({
@@ -78,8 +92,8 @@ $(document).ready(function() {
 		// $(this).css('left', Math.random());
 		// $(this).css('z-index', Math.random()*10);
 		$(this).css({
-			'top': Math.ceil(80*Math.random())+'%',
-			'left': Math.ceil(80*Math.random())+'%',
+			'top': Math.ceil(1500*Math.random()),
+			'left': Math.ceil(100*Math.random())+'%',
 			'z-index': Math.ceil(Math.random()*10)
 		});
 		$(this).jqFloat({
@@ -88,16 +102,20 @@ $(document).ready(function() {
 			// speed: Math.random()*500 + 1000
 			width:Math.floor(Math.random()*10)*15,
 			height:80,
-			speed:Math.floor(Math.random()*10)*100 + 500
+			speed:Math.floor(Math.random()*10)*100 + 800
 		});
 	});
 });
 </script>
 
 <style>
+body {
+	height: 1500px;
+	width: 1000px;
+}
 .astro{
-	width:200px;
-	height:185px;
+	width:160px;
+	height:200px;
 	/*background:url(sprite.png) no-repeat 0 0;*/
 	position:absolute;
 	z-index:10;
@@ -140,8 +158,24 @@ body {
 <img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro2" height="150px" width="180px"/>
 <img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro3" height="150px" width="180px"/>
 <img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-001156.jpg" class="astro" id="astro4" height="150px" width="180px"/> -->
-<img src="astro-pics/bryan.png" class="astro" id="astro5" height="200px" width="180px"/>
-<img src="astro-pics/chaz.png" class="astro" id="astro5" height="200px" width="180px"/>
+<img src="astro-pics/andyp.png" class="astro"/>
+<img src="astro-pics/brooke.png" class="astro"/>
+<img src="astro-pics/bryan.png" class="astro"/>
+<img src="astro-pics/charles.png" class="astro"/>
+<img src="astro-pics/chaz.png" class="astro"/>
+<img src="astro-pics/crystal.png" class="astro"/>
+<img src="astro-pics/elyse.png" class="astro"/>
+<img src="astro-pics/emily.png" class="astro"/>
+<img src="astro-pics/eric.png" class="astro"/>
+<img src="astro-pics/gentry.png" class="astro"/>
+<img src="astro-pics/gordon.png" class="astro"/>
+<img src="astro-pics/ian.png" class="astro"/>
+<img src="astro-pics/jason.png" class="astro"/>
+<img src="astro-pics/jeff.png" class="astro"/>
+<img src="astro-pics/john.png" class="astro"/>
+<img src="astro-pics/julia.png" class="astro"/>
+<img src="astro-pics/mark.png" class="astro"/>
+<img src="astro-pics/nick.png" class="astro"/>
 
 
 <footer>
