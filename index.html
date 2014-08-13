@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <link rel="shortcut icon" href="assets/img/bitcoin.png">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>To The Moon!! -- BitPay Interns Summer 2014</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,11 +28,11 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jqfloat.min.js"></script>
     <script src="assets/js/effects.js"></script>
+    <script src="assets/js/particles.js"></script>
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" onmouseup="context.fillStyle='rgb(0,0,0)'">
-  <canvas id="starfield" style="position: absolute; background-color: rgb(0, 0, 0);" width="1366" height="560"></canvas>
+  <body>
 
     <div class="navbar-wrapper">
       <div class="container">
@@ -49,8 +51,6 @@
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#tothemoon">To The Moon</a></li>
-                <li><a href="#farewell">Farewell Letters</a></li>
                 <li class="dropdown">
               </ul>
             </div>
@@ -60,105 +60,65 @@
       </div>
     </div>
 
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div id="space">
+      <img src="assets/img/astro-pics/andyp.png" class="astro"/>
+      <img src="assets/img/astro-pics/brooke.png" class="astro"/>
+      <img src="assets/img/astro-pics/bryan.png" class="astro"/>
+      <img src="assets/img/astro-pics/charles.png" class="astro"/>
+      <img src="assets/img/astro-pics/chaz.png" class="astro"/>
+      <img src="assets/img/astro-pics/crystal.png" class="astro"/>
+      <img src="assets/img/astro-pics/elyse.png" class="astro"/>
+      <img src="assets/img/astro-pics/emily.png" class="astro"/>
+      <img src="assets/img/astro-pics/eric.png" class="astro"/>
+      <img src="assets/img/astro-pics/gentry.png" class="astro"/>
+      <img src="assets/img/astro-pics/gordon.png" class="astro"/>
+      <img src="assets/img/astro-pics/ian.png" class="astro"/>
+      <img src="assets/img/astro-pics/jason.png" class="astro"/>
+      <img src="assets/img/astro-pics/jeff.png" class="astro"/>
+      <img src="assets/img/astro-pics/john.png" class="astro"/>
+      <img src="assets/img/astro-pics/julia.png" class="astro"/>
+      <img src="assets/img/astro-pics/mark.png" class="astro"/>
+      <img src="assets/img/astro-pics/nick.png" class="astro"/>
+    </div>
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
+      <!--div class="row">
+        < <div class="col-lg-4">
           <img class="img-circle" src="assets/img/osama.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        </div>
         <div class="col-lg-4">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        </div>
+      </div--><!-- /.row -->
 
-
+  <div class="container marketing">
       <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-      <a name="tothemoon"></a>
-      <div class="row featurette" id="space">
-        <!-- <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div> -->
-      </div>
-
+    <div class="interns">
+      <a name="farewell"></a>
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="assets/img/shivani.jpg" alt="Shivani Negi">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Shivani <span class="text-muted">Negi</span></h2>
+          <p class="lead">I'm da boss. To the moon!!! ┗(°0°)┛</p>
         </div>
       </div>
 
@@ -166,17 +126,92 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Osama <span class="text-muted">"Chex Mix" </span>Sakhi</h2>
+          <p class="lead">┗(°0°)┛</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive" src="assets/img/osama.jpg" alt="Chex Mix">
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/img/bennett.jpg" alt="Bennett Tullos">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Bennett <span class="text-muted">Tullos</span></h2>
+          <p class="lead">Thanks for a fantastic summer at BitPay!  I am happy to have gotten the opportunity to work in a fast-growing industry and in BitPay’s unique atmosphere.  It’s been my pleasure to work with such an awesome team comprised of people that share my passion for bitcoin, and I’ve gained experience that will be invaluable as I move forward in my career.</p>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Chris <span class="text-muted">Ernst</span></h2>
+          <p class="lead">It's been another whirlwind summer, even crazier than last year, if possible! I've learned a lot (again) and met some great new people. The company has exploded in growth, prominence, and product and I'm so exited to see what happens next. I hope to see everyone again real soon and I know the only place we're going is to the moon.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/img/chris.jpg" alt="Chris Ernst">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/img/mallika.jpg" alt="Mallika Sen">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Mallika <span class="text-muted">Sen</span></h2>
+          <p class="lead">To Be Continued...</p>
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Pat <span class="text-muted">Riley</span></h2>
+          <p class="lead">Working for BitPay has been a tremendous experience and it is truly exciting and motivating to be a part of a company that is leading a brand new industry into uncharted territory.Bitpay and its people have no shortage of passion, and I believe that in the bitcoin space the companies with true excitement for this technology will be the ones to innovate and flourish. I look forward to being a part of this movement and thank you for the opportunity.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/img/pat.png" alt="Pat Riley">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/img/gabe.png" alt="Gabe Gattis">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Gabe <span class="text-muted">Gattis</span></h2>
+          <p class="lead">When I read in early 2013 that BitPay was moving its headquarters to Atlanta, I was excited. A major Bitcoin company was moving to my city. Just a few months later, began working as an intern. I have been working with BitPay for almost a year now, and it has been quite the year! I have witnessed the dramatic ups and downs of the market, seen how the industry works from the inside, and, most importantly, gained a great deal of knowledge about Bitcoin. I could not have done this among a finer group of individuals. All of them are dedicated and inspiring bitcoiners. I would like to thank everyone at BitPay for this wonderful experience. Most importantly, I would like to thank BitPay for offering me a full time position as a software engineer. A year and a half ago, I could not have imagined that I would be here today, but now I am certain that I have found the right place. I am eager to build the new world of crypto-finance with my peers here at BitPay. "The future's so bright, we've got to wear shades!"</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Evan <span class="text-muted">LaHurd</span></h2>
+          <p class="lead">Hey everyone, Thank you so much for the wonderful opportunity! I've learned so much in my two summers with you guys. I have gained technical skills that I will continue to use and develop throughout my career, and being around such an intelligent team of people has motivated me to further my knowledge even more. I look forward to seeing BitPay continue to grow as a company, and I'd love to be a part of the team again in the future!</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="assets/img/evan.jpg" alt="Evan LaHurd">
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
       <!-- /END THE FEATURETTES -->
+    </div>
 
 
       <!-- FOOTER -->

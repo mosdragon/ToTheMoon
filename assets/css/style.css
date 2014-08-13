@@ -1,9 +1,19 @@
 
 .astro {
-  width: 160;
-  height: 190;
+  width:160px;
+  height:190;
+  position:absolute;
+  z-index:10;
 }
 
-#space-1 .astro {
-
+.interns img {
+  width: 500px;
 }
+/*
+
+#space{
+  /*background: url('../img/space.jpg');*/
+  /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), color-stop(1, #000000));*/
+  height: 800px;
+  width: 1380px;
+}*/
